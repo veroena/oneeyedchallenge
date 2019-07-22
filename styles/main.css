@@ -13,6 +13,7 @@
   border: solid 1px black;
   border-bottom: dotted;
   box-sizing: border-box;
+  z-index: 1;
   position: absolute;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
@@ -48,4 +49,140 @@
   100% {
     transform: translateY(-5px);
   }
+}
+
+.pumpkin {
+  height: 50px;
+  width: 60px;
+  border-radius: 40px / 50px;
+  background-color: orange;
+  border: solid 1px black;
+  box-sizing: border-box;
+  position: absolute;
+  top: 300px;
+  left: 400px;
+}
+
+.pumpkin:before,
+.pumpkin:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+	height: 100%;
+  border-radius: 180px / 240px;
+}
+
+.pumpkin:before {
+  left: 18%;
+  border-left: 3px solid rgba(0,0,0,0.1)
+}
+
+.pumpkin:after {
+  right: 18%;
+  border-right: 3px solid rgba(0,0,0,0.1)
+}
+
+.pumpkin-stem {
+  height: 18px;
+  width: 12px;
+  background-color: green;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 10px;
+  transform: translate(180%, -70%);
+}
+
+.spider {
+  height: 40px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 60px;
+  left: 100px;
+}
+
+.spider-eye {
+  height: 18px;
+  width: 12px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.spider-eye-left {
+  transform: translate(110%, 40%);
+}
+
+.spider-eye-right {
+  transform: translate(200%, -60%);
+}
+
+.spider-eye::after {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: black;
+  transform: translate(130%, 140%);
+}
+
+.spider-leg-left {
+  width:20px;
+  height:20px;
+  border-top:1px solid black;
+  border-left:1px solid black;
+  border-top-left-radius:20px;
+  box-shadow:inset 0 1px 0 black;
+}
+
+.spider-leg1 {
+  transform: translate(-100%, -180%) rotate(50deg);
+}
+
+.spider-leg2 {
+  transform: translate(-100%, -240%) rotate(40deg);
+}
+
+.spider-leg3 {
+  transform: translate(-100%, -300%) rotate(30deg);
+}
+
+.spider-leg4 {
+  transform: translate(-100%, -360%) rotate(20deg);
+}
+
+.spider-leg-right {
+  width:20px;
+  height:20px;
+  border-top:1px solid black;
+  border-right:1px solid black;
+  border-top-right-radius:20px;
+  box-shadow:inset 0 1px 0 black;
+}
+
+.spider-leg5 {
+  transform: translate(230%, -570%) rotate(310deg);
+}
+
+.spider-leg6 {
+  transform: translate(230%, -630%) rotate(320deg);
+}
+
+.spider-leg7 {
+  transform: translate(230%, -690%) rotate(330deg);
+}
+
+.spider-leg8 {
+  transform: translate(230%, -750%) rotate(340deg);
+}
+
+
+
+
+
+.hidden {
+  display: none;
 }
